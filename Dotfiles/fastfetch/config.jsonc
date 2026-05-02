@@ -1,0 +1,116 @@
+// Inspired by Catnap
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "type": "auto",
+        "source": "~/Documentos/ana.txt",
+        "padding": {"top": 1, "right": 1, "left": 2},
+        "color": {
+            "1": "38;2;152;175;199"
+        },
+    },
+    "display": {
+"color": {
+        "keys": "38;2;152;175;199", 
+        "title": "38;2;176;224;230"  
+    },
+        "separator": " "
+    },
+    "modules": [
+          "break",
+          "break",
+         {
+            "type": "os",
+            "key": "OS   ",
+            "keyColor": "97",
+        },
+        {
+            "type": "kernel",
+            "key": " ├  ",
+            "keyColor": "97",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ├ 󰏖 ",
+            "keyColor": "97",  
+        },
+        {
+            "type": "shell",
+            "key": " └  ",
+            "keyColor": "97", 
+        },
+        "break",
+        {
+            "type": "wm",
+            "key": "WM   ",
+            "keyColor": "97", 
+        },
+        {
+            "type": "wmtheme",
+            "key": " ├ 󰉼 ",
+            "keyColor": "97",
+        },
+        {
+            "type": "icons",
+            "key": " ├ 󰀻 ",
+            "keyColor": "97",
+        },
+        {
+            "type": "cursor",
+            "key": " ├  ",
+            "keyColor": "97", 
+        },
+        {
+            "type": "terminal",
+            "key": " ├  ",
+            "keyColor": "97",
+        },
+        {
+            "type": "terminalfont",
+            "key": " └  ",
+            "keyColor": "97", 
+        },
+        "break",
+        {
+            "type": "cpu",
+            "format": "{name}",
+            "key": "CPU",
+            "keyColor": "97",
+        },
+        {
+            "type": "gpu",
+            "format": "{name}",            
+            "key": " ├ 󰢮 ",
+            "keyColor": "97",
+        },
+        {
+            "type": "memory",
+            "key": " ├  ",
+            "keyColor": "97",
+        },
+        {
+            "type": "swap",
+            "key": " ├ 󰓡 ",
+            "keyColor": "97",
+        },
+        {
+            "type": "disk",
+            "key": " ├ 󰋊 ",
+            "keyColor": "97",
+        },
+        {
+            "type": "monitor",
+            "format": "{width}x{height}px {refresh-rate} hz",
+            "key": " └  ",
+            "keyColor": "97",
+        },
+        "break",
+        {
+            "key": "  ",
+            "type": "colors",
+            "symbol": "circle",
+            "keyColor": "38;2;152;175;199",
+        },
+        ]
+}

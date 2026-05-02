@@ -1,0 +1,127 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "width": 1431,
+    "margin-top": 8,
+    "spacing": 0,
+     "modules-left": [
+        "custom/power",
+        "clock",
+        "network",
+        "custom/wired",
+        "hyprland/workspaces",
+    ],
+    "modules-center": [
+        "hyprland/window"
+    ],
+    "modules-right": [
+        "mpris",
+        "pulseaudio",
+        "group/hardware"
+    ],
+
+
+ // La configuracion de los modulos:
+
+    "custom/power": {
+        "format": " ⏻ ",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+
+    "clock": {
+        "interval": 1,
+        "format": " [{:%H:%M:%S}] ",
+        "format-alt": " [{:%d/%m/%y}] ",
+        "tooltip-format": "<tt>{calendar}</tt>"
+    },
+
+    "network": {
+        "format-ethernet": " [ETH:OK] ",
+        "format-wifi": " [WLAN:{signalStrength}%] ",
+        "format-disconnected": " [OFFLINE] ",
+        "on-click": "kitty -e nmtui" 
+    },
+
+    "custom/wired": {
+        "format": " ♆ WIRED ",
+        "interval": "once"
+    }, 
+ 
+    "hyprland/workspaces": {
+        "active-only": false,
+        "all-outputs": true,
+        "disable-scroll": true,
+        "warp-on-scroll": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "󰲠",
+            "2": "󰋋",
+            "3": "",
+            "4": "󰲦",
+            "5": "󰲨",
+            "6": "󰲪",
+            "7": "󰲬",
+            "8": "󰲮",
+            "9": "󰲰",
+            "10": "󰿬",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    },
+        
+    "hyprland/window": {
+        "format": " > {title} ",
+        "max-length": 45,
+        "separate-outputs": true
+    },
+
+    "mpris": {
+        "format": " 󰎆 {album} - {artist} - {title} ",
+        "format-paused": " 󰏤 PAUSED ",
+        "max-length": 30,
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    },
+
+    "pulseaudio": {
+        "format": " VOL:{volume}% ",
+        "format-muted": " MUTED ",
+        "on-click": "pavucontrol",
+        "scroll-step": 1
+    },
+
+    "group/hardware": {
+        "orientation": "horizontal",
+        "modules": [
+            "cpu",
+            "memory",
+            "temperature"
+        ]
+    },
+
+    "cpu": {
+        "interval": 5,
+        "format": " CPU:{usage}% ",
+        "on-click": "kitty -e btop"
+    },
+
+    "memory": {
+        "interval": 10,
+        "format": " MEM:{percentage}% ",
+        "tooltip-format": "{used:0.1f}G/{total:0.1f}G"
+    },
+
+    "temperature": {
+        "critical-threshold": 75,
+        "format": " {temperatureC}°C ",
+        "tooltip": false
+    }
+}
+
+
+
+

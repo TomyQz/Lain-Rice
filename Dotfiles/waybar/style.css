@@ -1,0 +1,107 @@
+
+
+* {
+    background: #000000;
+    color: #7a7979;
+    border: none;
+    border-radius: 0; 
+    font-family: "AdwaitaMono Nerd Font", monospace; 
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(10, 10, 10, 0.95); 
+    color: #000000;
+    border-bottom: 1px solid #31546b;
+}
+
+
+  /* Zona Izquierda */
+
+#custom-power {
+    background: #000000;
+    color: #31546b;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+#clock {
+    background: #000000;
+    color: #31546b; 
+    padding: 0 12px;
+}
+ 
+#network, #custom-wired {
+    background: #000000;
+    padding: 0 10px;
+    color: #31546b;
+}
+
+#workspaces button {
+    color: #4c566a; 
+    padding: 0 8px;
+}
+
+#workspaces button.active {
+    color: #31546b; 
+    border-bottom: 2px solid #31546b;
+}
+
+
+ /* Zona Central */
+
+#window {
+    color: #31546b;
+    padding: 0 20px;
+}
+
+
+ /* Zona Derecha */
+
+#mpris {
+    color: #31546b; 
+    padding: 0 15px;
+}
+
+#pulseaudio {
+    color: #31546b; 
+    padding: 0 10px;
+}
+
+#cpu, #memory, #temperature {
+    padding: 0 10px;
+    border-left: 1px solid #333333;
+    color: #31546b; 
+}
+
+#temperature.critical {
+    background: #bf616a; 
+    color: #000000;
+}
+
+
+  /* Parpadeo de WIRED */
+
+#custom-wired {
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    color: #30694c; 
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
