@@ -41,7 +41,6 @@ To install all the necessary dependencies for the rice, run the following comman
 sudo pacman -S hyprland waybar kitty cava mpv fastfetch
 ```
 Note: Unimatrix is usually found in the AUR. You can install it using an AUR helper like yay or paru:
-Bash
 ```
 yay -S unimatrix-git
 
