@@ -4,13 +4,13 @@
 }
 
 window {
-    background-color: rgba(0, 0, 0, 0.5); /* Esto es el fondo de toda la pantalla */
+    background-color: rgba(0, 0, 0, 0.5); 
 }
 
 button {
     color: #31546b;
-    background-color: transparent; /* CAMBIO: Ahora no tienen fondo negro */
-    border: 2px solid #31546b;     /* CAMBIO: Borde con tu azul para que se vean */
+    background-color: transparent;
+    border: 2px solid #31546b;     
     border-radius: 0;
     margin: 10px;
     background-repeat: no-repeat;
@@ -19,13 +19,11 @@ button {
 }
 
 button:focus, button:active, button:hover {
-    background-color: rgba(49, 84, 107, 0.7); /* Se ilumina un poco al pasar el mouse */
+    background-color: rgba(49, 84, 107, 0.7);
     color: #000000;
     border: 2px solid #5e81ac;
 }
 
-/* --- ICONOS --- */
-/* Si no aparecen, asegúrate de que las rutas sean correctas (.png o .svg) */
 #lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
 #logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
 #suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }
