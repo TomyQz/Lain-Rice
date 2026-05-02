@@ -18,6 +18,8 @@ Window Managers and Compositors
 
     Waybar: For the top bar.
 
+    wlogout for power buttom in Waybar.
+
 Terminal Applications
 
     Kitty: The terminal emulator.
@@ -40,9 +42,9 @@ To install all the necessary dependencies for the rice, run the following comman
 ```bash
 sudo pacman -S hyprland waybar kitty cava mpv fastfetch
 ```
-Note: Unimatrix is usually found in the AUR. You can install it using an AUR helper like yay or paru:
+Note: Unimatrix and Wlogout is usually found in the AUR. You can install it using an AUR helper like yay or paru:
 ```
-yay -S unimatrix-git
+yay -S unimatrix-git wlogout
 
 ```
 ## SDDM Theme
