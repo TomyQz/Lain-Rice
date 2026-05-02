@@ -1,0 +1,34 @@
+* {
+    transition: 200ms;
+    font-family: "AdwaitaMono Nerd Font", monospace;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.5); /* Esto es el fondo de toda la pantalla */
+}
+
+button {
+    color: #31546b;
+    background-color: transparent; /* CAMBIO: Ahora no tienen fondo negro */
+    border: 2px solid #31546b;     /* CAMBIO: Borde con tu azul para que se vean */
+    border-radius: 0;
+    margin: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+}
+
+button:focus, button:active, button:hover {
+    background-color: rgba(49, 84, 107, 0.7); /* Se ilumina un poco al pasar el mouse */
+    color: #000000;
+    border: 2px solid #5e81ac;
+}
+
+/* --- ICONOS --- */
+/* Si no aparecen, asegúrate de que las rutas sean correctas (.png o .svg) */
+#lock { background-image: image(url("/usr/share/wlogout/icons/lock.png")); }
+#logout { background-image: image(url("/usr/share/wlogout/icons/logout.png")); }
+#suspend { background-image: image(url("/usr/share/wlogout/icons/suspend.png")); }
+#hibernate { background-image: image(url("/usr/share/wlogout/icons/hibernate.png")); }
+#shutdown { background-image: image(url("/usr/share/wlogout/icons/shutdown.png")); }
+#reboot { background-image: image(url("/usr/share/wlogout/icons/reboot.png")); }
