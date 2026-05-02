@@ -20,6 +20,8 @@ Window Managers and Compositors
 
     wlogout for power buttom in Waybar.
 
+    Rofi (optional)
+
 Terminal Applications
 
     Kitty: The terminal emulator.
@@ -40,7 +42,7 @@ Visual Effects
 
 To install all the necessary dependencies for the rice, run the following command:
 ```bash
-sudo pacman -S hyprland waybar kitty cava mpv fastfetch
+sudo pacman -S waybar kitty cava mpv fastfetch rofi
 ```
 Note: Unimatrix and Wlogout is usually found in the AUR. You can install it using an AUR helper like yay or paru:
 ```
