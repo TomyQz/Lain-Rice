@@ -42,7 +42,7 @@ Visual Effects
 
 To install all the necessary dependencies for the rice, run the following command:
 ```bash
-sudo pacman -S waybar kitty cava mpv fastfetch rofi
+sudo pacman -S waybar kitty cava mpv fastfetch rofi awww
 ```
 Note: Unimatrix and Wlogout is usually found in the AUR. You can install it using an AUR helper like yay or paru:
 ```
